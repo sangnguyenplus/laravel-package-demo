@@ -1,5 +1,5 @@
 <?php
 
-Route::get('/demo', function () {
-    return 'First module "Demo" is loaded.';
+Route::group(['namespace' => 'Botble\Demo\Http\Controllers'], function () {
+    Route::get('/demo', 'DemoController@getIndex');
 });
