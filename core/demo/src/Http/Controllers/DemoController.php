@@ -3,6 +3,7 @@
 namespace Botble\Demo\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Botble\Demo\Models\Demo;
 
 class DemoController extends Controller
 {
@@ -11,6 +12,7 @@ class DemoController extends Controller
      */
     public function getIndex()
     {
+        Demo::create(['name' => 'Demo ' . time()]);
         return view('botble-demo::index');
     }
 }
