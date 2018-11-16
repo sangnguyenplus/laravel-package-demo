@@ -160,8 +160,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Botble\Demo\Providers\DemoServiceProvider::class,
-
     ],
 
     /*
